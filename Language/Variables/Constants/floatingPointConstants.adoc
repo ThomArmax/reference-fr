@@ -1,5 +1,5 @@
 ---
-title: Floating Point Constants
+title: Constantes À Virgule Flottante
 categories: [ "Variables" ]
 subCategories: [ "Constantes" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Constantes" ]
 
 
 
-= Floating Point Constants
+= Constantes À Virgule Flottante
 
 
 // OVERVIEW SECTION STARTS
@@ -18,7 +18,8 @@ subCategories: [ "Constantes" ]
 
 [float]
 === Description
-Similar to integer constants, floating point constants are used to make code more readable. Floating point constants are swapped at compile time for the value to which the expression evaluates.
+Similaires aux constantes entières, les constantes à virgule flottante sont utilisées pour rendre le code plus lisible. 
+Les constantes à virgule flottante sont permutées au moment de la compilation par sa valeur.
 [%hardbreaks]
 
 --
@@ -31,21 +32,21 @@ Similar to integer constants, floating point constants are used to make code mor
 --
 
 [float]
-=== Example Code
+=== Code d'Exemple
 
 [source,arduino]
 ----
-n = 0.005;  // 0.005 is a floating point constant
+n = 0.005;  // 0.005 est une constante à virgule flottante
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Floating point constants can also be expressed in a variety of scientific notation. 'E' and 'e' are both accepted as valid exponent indicators.
+=== Notes et Avertissemnts
+Les constantes à virgule flottante peuvent également être exprimées dans différentes notations scientifiques. 'E' et 'e' sont tous deux acceptés comme indicateurs d'exposant valides.
 [%hardbreaks]
 
 |===
-|floating-point constant |evaluates to: |also evaluates to:
+|constante à virgule flottante |s'évalue à: |s'évalue aussi à:
 
 |10.0
 |10
@@ -73,7 +74,7 @@ Floating point constants can also be expressed in a variety of scientific notati
 --
 
 [float]
-=== See also
+=== Voir également
 
 [role="language"]
 
