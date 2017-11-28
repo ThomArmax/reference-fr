@@ -4,8 +4,6 @@ categories: [ "Variables" ]
 subCategories: [ "Constantes" ]
 ---
 
-:source-highlighter: pygments
-:pygments-style: arduino
 
 
 
@@ -18,7 +16,7 @@ subCategories: [ "Constantes" ]
 
 [float]
 === Description
-Les constantes entières sont des nombres utilisés directement dans un 'sketch', comme 123. Par défaut, ces nombres sont traités comme des link:../../data-types[int] mais vous pouvez changer cela en utilisant les modificateurs 'U' et 'L' (voir ci-dessous).
+Les constantes entières sont des nombres utilisés directement dans un 'sketch', comme 123. Par défaut, ces nombres sont traités comme des link:../../data-types/int[int] mais vous pouvez changer cela en utilisant les modificateurs 'U' et 'L' (voir ci-dessous).
 [%hardbreaks]
 
 Normalement, les constantes entières sont traitées comme des entiers de base 10 (décimaux), mais une notation spéciale (formateurs) peut être utilisée pour saisir des nombres dans d'autres bases.
