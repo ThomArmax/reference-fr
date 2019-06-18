@@ -19,10 +19,10 @@ subCategories: [ "Analog I/O" ]
 === Description
 Configures the reference voltage used for analog input (i.e. the value used as the top of the input range). The options are:
 
-Arduino AVR Boards (Uno, Mega, etc.)
+Arduino AVR Boards (Uno, Mega, Leonardo, etc.)
 
 * DEFAULT: the default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
-* INTERNAL: an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328P and 2.56 volts on the ATmega8 (not available on the Arduino Mega)
+* INTERNAL: an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328P and 2.56 volts on the ATmega32U4 and ATmega8 (not available on the Arduino Mega)
 * INTERNAL1V1: a built-in 1.1V reference (Arduino Mega only)
 * INTERNAL2V56: a built-in 2.56V reference (Arduino Mega only)
 * EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
@@ -35,6 +35,18 @@ Arduino SAMD Boards (Zero, etc.)
 * AR_INTERNAL1V65: a built-in 1.65V reference
 * AR_INTERNAL2V23: a built-in 2.23V reference
 * AR_EXTERNAL: the voltage applied to the AREF pin is used as the reference
+
+Arduino megaAVR Boards (Uno WiFi Rev2)
+
+* DEFAULT: a built-in 0.55V reference
+* INTERNAL: a built-in 0.55V reference
+* VDD: Vdd of the ATmega4809. 5V on the Uno WiFi Rev2
+* INTERNAL0V55: a built-in 0.55V reference
+* INTERNAL1V1: a built-in 1.1V reference
+* INTERNAL1V5: a built-in 1.5V reference
+* INTERNAL2V5: a built-in 2.5V reference
+* INTERNAL4V3: a built-in 4.3V reference
+* EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference
 
 Arduino SAM Boards (Due)
 
@@ -51,6 +63,7 @@ Arduino SAM Boards (Due)
 [float]
 === Parameters
 `type`: which type of reference to use (see list of options in the description).
+
 
 [float]
 === Returns
@@ -87,7 +100,7 @@ Alternatively, you can connect the external reference voltage to the AREF pin th
 === See also
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of the analog input pins^]
 
 --
 // SEE ALSO SECTION ENDS
